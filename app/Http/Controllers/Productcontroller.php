@@ -30,7 +30,7 @@ class ProductController extends Controller
             'name' => 'required',
             'description' => 'required',
             'price' => 'required|numeric',
-            'SKU' => 'required',
+            'SKU' => 'required|unique:products,sku,'.$id,
             'qty' => 'required|integer',
             'type' => 'required',
             'vendor' => 'required',
