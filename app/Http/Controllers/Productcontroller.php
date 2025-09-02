@@ -20,7 +20,7 @@ class ProductController extends Controller
 
     public function addProduct($id = 0)
     {
-        $product = $id ? Product::find($id) : null;
+        $product = $id ? Product::find($id) : new Product();
         return view('product.form', compact('product','id'));
     }
 
