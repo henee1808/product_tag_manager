@@ -111,7 +111,7 @@ class Rulecontroller extends Controller
             }
         }
 
-       return redirect()->back()->with('success', $rule->name . ' applied successfully to matching ' . $product->name . '.');
+       return redirect()->back()->with('success', $rule->name . ' applied successfully to matching Products');
 
 }
 
